@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>中間発表試聴サイト</title>
+  <link rel="stylesheet" href="lib/style.css">
+</head>
+
+<body>
+  <h1>RNNを用いた自動作曲 試聴サイト</h1>
+  <h2>近畿大学工業高等専門学校 制御情報コース</h2>
+  <h2>情報物理学研究室 太田海音</h2>
+
+
+  <h4>Melodyrnn</h4>
+  <img src="img\magenta.png">
+  <audio src="sound\tyukanhapyou.mp3" controls></audio>
+
+  <details class="accordion-005">
+    <summary>説明</summary>
+    MelodyrnnとはMagentaが用意している単音のメロディを作成モデル。</br>
+    学習データはMagentaが用意しているbasic_rnnを使用。</br>
+    下記で作成したものもMelodyrnnによって生成されている。</br>
+</details>
+<details class="accordion-005">
+    <summary>パラメータ</summary>
+    学習データ : basic_rnn</br>
+    小節数 : 4小節</br>
+    BPM : 120.0</br>
+    初めの音 : ド(C3)</br>
+</details>
+
+
+<h4>オリジナルの学習データ済みデータ</h4>
+<img src="img\pokerg.png">
+<audio src="sound\tyukanpokerg.mp3" controls></audio>
+
+<details class="accordion-005">
+  <summary>説明</summary>
+  ポケットモンスター赤・緑に登場するBGMを学習させた。
+</details>
+<details class="accordion-005">
+  <summary>パラメータ</summary>
+  学習データ : attention_rnnをベースとしたオリジナルの学習済みデータ</br>
+  小節数 : 4小節</br>
+  BPM : 120.0</br>
+  初めの音 : ド(C3)</br>
+</details>
+
+
+<h4>Cメジャー・ペンタトニックスケール</h4>
+<img src="img\cpenta.png">
+<audio src="sound\tyukancpenta.mp3" controls></audio>
+
+<details class="accordion-005">
+  <summary>説明</summary>
+  自身で作成したCメジャー・ペンタトニックスケールのmidiを学習させた。</br>
+  ※Cメジャーペンタトニックスケールとは白鍵の「ド・レ・ミ・ソ・ラ」で構成されたものである。
+</details>
+<details class="accordion-005">
+  <summary>パラメータ</summary>
+  学習データ : attention_rnnをベースとしたオリジナルの学習済みデータ</br>
+  小節数 : 4小節</br>
+  BPM : 120.0</br>
+  初めの音 : ド(C3)</br>
+</details>
+
+
+
+</body>
+
+
+
+</html>
